@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="image/favicon.png" type="image/png">
+        <title>Real State Multi</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/system/bootstrap.css">
+        <link rel="stylesheet" href="vendores/linericon/style.css">
+        <link rel="stylesheet" href="css/system/font-awesome.min.css">
+        <link rel="stylesheet" href="vendores/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendores/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendores/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendores/animate-css/animate.css">
+        <link rel="stylesheet" href="vendores/jquery-ui/jquery-ui.css">
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <!-- main css -->
+        <link rel="stylesheet" href="css/system/style.css">
+        <link rel="stylesheet" href="css/system/responsive.css">
+        <style type="text/css">
+ /*將CSS寫在HTML中*/
+ body{
+ width: 900px;
+ color: #D8C9F9;
+ margin:0 auto;
+ font-family: sans-serif, "微軟正黑體";
+ }
+
+#header{
+  float: right;
+  margin-right: 30%;
+ bbackground-color:#D8C9F9;
+ padding: 20px;
+
+ }
+
+
+
+ #aside{
+ width:30%;
+ height: 100%;
+ text-align: center;
+ background-color:#D8C9F9;
+ /* padding:0px 10px; */
+ float: left;
+ margin-left: -15%;
+ }
+
+ #section{
+ width: 640px;
+ height: 400px;
+ background-color: #D8C9F9;
+ line-height: 1.5em;
+ padding: 0px;
+ float: right;
+ margin-right: 10%;
+
+ }
+
+ #footer{
+   /* 設定footer的高度 */
+height: 10px;
+box-sizing: border-box;
+/* 設定footer絕對位置在底部 */
+position: absolute;
+bottom: 0;
+/* 展開footer寬度 */
+width: 50%;
+float: right;
+ }
+p {border-style:solid;}
+ h1{
+ font-family: sans-serif, "微軟正黑體";
+ font-size: 18px;
+ color: #FFF;
+ text-align: center;
+ }
+ h2{
+ font-family: sans-serif, "微軟正黑體";
+ font-size: 30px;
+ color: black;
+ text-align: center;
+ }
+ </style>
+    </head>
+    <body>
+
+        <!--================Header Menu Area =================-->
+
+        <!--================Header Menu Area =================-->
+
+        <!--================Home Banner Area =================-->
+
+            <!-- <div class="banner_inner d-flex align-items-center">
+				<div class="container">
+					<div class="banner_content">
+						<h5>The joy of home owning</h5>
+						<h3>Find Your New Home</h3>
+						<a class="main_btn" href="#">Learn More</a>
+					</div>
+				</div> -->
+
+
+      <aside id="aside">
+        <div id="sidebar_left">
+          <div class="advanced_search">
+            <h3><img src='image/ob2.png' width='40px' border-radius= '5px'>  原始臉型</h3>
+        <!-- <img src='image/girl.jpg' width='300px' border="2" > -->
+        <form action="/somewhere/to/upload" enctype="multipart/form-data">
+
+           <input type="file" id="progressbarTWInput" accept="image/gif, image/jpeg, image/png"/ >
+
+           <img id="preview_progressbarTW_img" src="https://progressbar.tw/uploads/ckeditor/pictures/501/content_CoverJS3_small.png" width='80%'/>
+
+        </form>
+          <script>
+              $("#progressbarTWInput").change(function(){
+              readURL(this);
+              });
+
+              function readURL(input){
+                if(input.files && input.files[0]){
+                  var reader = new FileReader();
+                  reader.onload = function (e) {
+                    $("#preview_progressbarTW_img").attr('src', e.target.result);
+                    $("#simulation").attr('src', e.target.result);
+                    // console.log(preview_progressbarTW_img);
+                  }
+                  reader.readAsDataURL(input.files[0]);
+
+                  }
+
+                }
+          </script>
+          <h3><img src='image/ob2.png' width='40px'>  3D模擬系統</h3>
+          <div class="search_select">
+            <select class="s_select">
+              <option value="1">選擇藥劑</option>
+              <option value="2">玻尿酸</option>
+              <option value="4">肉毒桿菌</option>
+            </select>
+            <!-- <select class="s_select">
+              <option value="1">Bedrooms</option>
+              <option value="2">Property Type</option>
+              <option value="4">Choose Locations</option>
+            </select>
+            <select class="s_select">
+              <option value="1">Bathrooms</option>
+              <option value="2">Property Type</option>
+              <option value="4">Bedrooms</option>
+            </select> -->
+          </div>
+          <div class="search_range">
+            <div class="range_item">
+              <h5>劑量微調</h5>
+              <div id="slider-range"></div>
+              <span class="d_text">0c.c.</span>
+              <input type="text" id="amount" readonly style="border:0;" class="amount">
+            </div>
+            <!-- <div class="range_item">
+              <h5>property Area</h5>
+              <div id="slider-range2"></div>
+              <span class="d_text2">50sqm</span>
+              <input type="text" id="amount2" readonly style="border:0;" class="amount2">
+            </div> -->
+            <script>
+              function click(){
+                 document.getElementById("ddd").innerHTML='預估劑量:玻尿酸4 c.c.';
+                 alert('kkk');
+              }
+            </script>
+          </div>
+          <button class="btn submit_btn" onclick='click()'>顯示預估劑量</button>
+<hr><CENTER><a href="image.html" class="btn submit_btn">SAVE</a></CENTER>
+        </div>
+    </div>
+      </aside>
+    <br>
+    <!-- <header id='header'>
+    <h2><img src='image/ob2.png' width='40px'>  模擬區</h2>
+    </header> -->
+      <section id="section">
+    <!-- <img src="ALL.gif" width='80%'> -->
+<img id="simulation" src="https://progressbar.tw/uploads/ckeditor/pictures/501/content_CoverJS3_small.png" width='850px' height='680px'/>
+
+    </section>
+
+
+        <!--================End Home Banner Area =================-->
+
+        <!--================Welcome Area =================-->
+
+        <!--================End Testimonials Area =================-->
+
+        <!--================Cities Area =================-->
+
+        <!--================End Feature Area =================-->
+
+
+        <!--================Clients Logo Area =================-->
+
+        <!--================End Clients Logo Area =================-->
+
+
+        <!--================ start footer Area  =================-->
+
+		<!--================ End footer Area  =================-->
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script src="js/system/jquery-3.2.1.min.js"></script></script>
+        <script src="js/system/popper.js"></script>
+        <script src="js/system/bootstrap.min.js"></script>
+        <script src="js/system/stellar.js"></script>
+        <script src="vendores/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendores/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendores/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendores/isotope/isotope-min.js"></script>
+        <script src="vendores/owl-carousel/owl.carousel.min.js"></script>
+        <script src="vendores/jquery-ui/jquery-ui.js"></script>
+        <script src="js/system/jquery.ajaxchimp.min.js"></script>
+        <script src="js/system/mail-script.js"></script>
+        <script src="js/system/theme.js"></script>
+    </body>
+</html>
