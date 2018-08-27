@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script src="js/system/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.qrcode.js"></script>
+  <script type="text/javascript" src="js/qrcode.js"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="image/favicon.png" type="image/png">
+    <title>Real State Multi</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/system/bootstrap.css">
+    <link rel="stylesheet" href="vendores/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendores/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendores/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="vendores/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendores/animate-css/animate.css">
+    <link rel="stylesheet" href="vendores/jquery-ui/jquery-ui.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/system/style.css">
+    <link rel="stylesheet" href="css/system/responsive.css">
+
+    <style type="text/css">
+
+
+/*將CSS寫在HTML中*/
+body{
+width: 900px;
+background-color: #D8C9F9;
+margin:0 auto;
+font-family: sans-serif, "微軟正黑體";
+}
+
+#header{
+float: right;
+margin-right: 30%;
+bbackground-color:#D8C9F9;
+padding: 20px;
+
+}
+
+
+
+#aside{
+width:30%;
+height: 100%;
+text-align: center;
+background-color:#D8C9F9;
+/* padding:0px 10px; */
+float: left;
+margin-left: -15%;
+}
+
+#section{
+width: 640px;
+height: 400px;
+background-color: #D8C9F9;
+line-height: 1.5em;
+padding: 0px;
+float: right;
+margin-right: 10%;
+
+}
+
+#footer{
+/* 設定footer的高度 */
+height: 10px;
+box-sizing: border-box;
+/* 設定footer絕對位置在底部 */
+position: absolute;
+bottom: 0;
+/* 展開footer寬度 */
+width: 50%;
+float: right;
+}
+p {border-style:solid;}
+h1{
+font-family: sans-serif, "微軟正黑體";
+font-size: 18px;
+color: #FFF;
+text-align: center;
+}
+h2{
+font-family: sans-serif, "微軟正黑體";
+font-size: 30px;
+color: black;
+text-align: center;
+}
+h3{
+font-family: sans-serif, "微軟正黑體";
+}
+
+</style>
+</head>
+    <body>
+
+        <!-- <a onclick="qrcode()" class="genric-btn info circle arrow">產生QRcode<span class="lnr lnr-arrow-right"></span></a> -->
+        <div id="qrcode"></div>
+        <script>
+          jQuery('#qrcode').QRCode({width: 64,height: 64,text: "size doesn't matter"});
+        </script>
+
+
+      <!-- <div id="Header">Header 欄位</div> -->
+        <CENTER><h1>術前</h1><BR>
+        <div id="Sidebar"><img src='image/girl.jpg' width='400px' border-radius= '5px'></div>
+        <h1>預估術後</h1><BR>
+        <div id="body"><img src='image/girl2.png' width='400px' border-radius= '5px'></div>
+        <div style='clear:both;'></div></CENTER>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/system/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.qrcode.js"></script>
+        <script src="js/qrcode.js"></script>
+    </body>
+</html>
